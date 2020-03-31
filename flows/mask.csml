@@ -1,0 +1,44 @@
+start:
+	say Typing(2000)
+	say "Wearing a surgical mask is not recommended without symptoms. 😷"
+	say Typing(2000)
+	say "❗ The mask **is not the right answer for the general public** because it cannot be worn permanently and most importantly **has no indication without close and prolonged contact with a patient**."
+	say Typing(2000)
+	say "The mask is therefore **reserved for patients on medical prescription**, for high-risk contacts, for professionals in personal assistance, medical transport, health professions, in town or in hospital."
+	say Typing(2000)
+	goto masque
+
+masque:
+	say Question("Do you want us to see together **how to put on, use, take off and dispose of a mask**?",
+		buttons=[
+			Button("Yes", accepts=["yes", "yep", "ok", "all right", "Yes"]) as yesbtn,
+			Button("No", accepts=["no", "nope"]) as nobtn
+		]
+	)
+	hold
+
+	if (event match yesbtn) {
+		say Typing(2000)
+		say "1️⃣ Before putting on a mask, clean hands with alcohol-based hand rub or soap and water."
+		say Typing(2000)
+		say "2️⃣ Cover mouth and nose with mask and make sure there are no gaps between your face and the mask."
+		say Typing(2000)
+		say "3️⃣ Avoid touching the mask while using it; if you do, clean your hands with alcohol-based hand rub or soap and water."
+		say Typing(2000)
+		say "4️⃣ Replace the mask with a new one as soon as it is damp and do not re-use single-use masks."
+		say Typing(2000)
+		say "5️⃣ To remove the mask:
+		 - remove it from behind (do not touch the front of mask);
+		 - discard immediately in a closed bin;
+		 - clean hands with alcohol-based hand rub or soap and water"
+		say Video("https://www.youtube.com/watch?v=lrvFrH_npQI&feature=youtu.be")
+		say Typing(2000)
+		say "Source :"
+		say Url("https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/advice-for-public/when-and-how-to-use-masks",
+			text="WHO - When and how to put a mask?")
+	}
+	else {
+		say "Gotcha 😀
+		Do you have any questions?"
+	}
+  goto flow Default

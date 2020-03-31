@@ -1,0 +1,42 @@
+{
+  "id": "e47e5dc9-77e4-43df-8e5e-d584f0d935c3",
+  "name": "OpenSource_covidbot_en",
+  "default_flow": "Default",
+  "tags": [],
+  "flows": [
+    {
+      "name": "Default",
+      "description": "Default custom flow",
+      "commands": [],
+      "tags": []
+    },
+    {
+      "name": "fake_news",
+      "commands": [],
+      "tags": []
+    },
+    {
+      "name": "figures",
+      "commands": [],
+      "tags": []
+    },
+    {
+      "name": "good_gestures",
+      "commands": [],
+      "tags": []
+    },
+    {
+      "name": "mask",
+      "commands": [],
+      "tags": []
+    },
+    {
+      "name": "resources",
+      "commands": [],
+      "tags": []
+    }
+  ],
+  "files": [],
+  "functions": [],
+  "apps": []
+}

@@ -1,0 +1,14 @@
+start:
+	say "Here is a daily Higlight of the development of Coronavirus, as reported by the WHO"
+	say Typing(3000)
+	say "As of **March 31st, 10 am**"
+	say Typing(2000)
+	say "The Director-General said yesterday that Europe has now become the epicenter of the pandemic, with more reported cases and deaths than the rest of the world combined, apart from China. Many countries are now acting on the eight pillars of WHO’s Strategic Preparedness and Response Plan"
+	say Typing(3000)
+	say "AS for the figures, globally, **715 660** cases have been confirmed , with a total of **33 579** deaths "
+	say Typing(2000)
+	say "You can find the whole report here :"
+	say Typing(5000)
+	say Url("https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200314-sitrep-54-covid-19.pdf?sfvrsn=dcd46351_6",
+		text="WHO daily highlight")
+  goto flow Default
